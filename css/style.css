@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1140px;
+  margin: 0 auto;
+  color: #1d1d1f;
+}
+
+.video_btn {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin: 14px 0 6px;
+  text-align: left;
+  cursor: pointer;
+  border: 0;
+}
+.video_btn img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  object-fit: cover;
+}
+.video_btn .video_box {
+  padding: 0 16px;
+  background: #f5f5f7;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+  font-size: 14px;
+  font-weight: 400;
+}
+.video_btn .video_box p {
+  padding-right: 22px;
+}
+.video_btn .video_box span {
+  color: #86868b;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.grey {
+  color: #86868b;
+}
+
+sup {
+  top: -0.5em;
+  position: relative;
+  font-size: 0.6em;
+  vertical-align: baseline;
+}
+
+button {
+  background-color: #fff;
+}
+
+.main_head {
+  margin: 0 auto;
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_head nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+.main_head button {
+  border: 0;
+}
+
+.credit_box {
+  background-color: #f5f5f7;
+}
+.credit_box .credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.active {
+  top: 0;
+}
+
+.floating_head {
+  background-color: #fff;
+  padding: 10px 0;
+  display: flex;
+  display: disabled;
+  animation: show 1s forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  flex-direction: column;
+}
+.floating_head .head_top {
+  padding: 6px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.floating_head .head_top p {
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+}
+.floating_head .head_top span {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.021em;
+}
+.floating_head .head_bottom {
+  padding: 10px 0;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+.floating_head .head_bottom div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.floating_head .head_bottom svg {
+  width: 25px;
+  height: 25px;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+.show {
+  animation: hide 1s forwards;
+}
+
+.hide {
+  animation: show 1s forwards;
+}
+
+.payment_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f7;
+  margin: 16px 0;
+  padding: 14px 0;
+}
+.payment_details div {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+}
+.payment_details div img {
+  height: 24px;
+  width: auto;
+}
+.payment_details div p {
+  width: 140px;
+  font-size: 14px;
+  margin-left: 12px;
+}
+.payment_details .link_box {
+  display: block;
+}
+.payment_details .link_box span {
+  font-size: 14px;
+  display: block;
+  line-height: 1.28577;
+  font-weight: 600;
+}
+.payment_details .link_box a {
+  color: #06c;
+}
+
+.large {
+  width: 90%;
+}
+
+.iPhone_top {
+  padding-top: 52px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iPhone_top .left_side {
+  max-width: 640px;
+}
+.iPhone_top .left_side h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+.iPhone_top .left_side p {
+  margin-top: 3px;
+  color: #bf4800;
+  font-size: 17px;
+}
+.iPhone_top .left_side span {
+  font-size: 14px;
+}
+.iPhone_top .right_side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 4px;
+}
+.iPhone_top .right_side button {
+  border: 0;
+  border-radius: 18px;
+  display: flex;
+  background-color: #f5f5f7;
+  padding: 12px 16px;
+  margin: 6px 0;
+  font-size: 12px;
+}
+.iPhone_top .right_side button img {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
+
+.iPhone_bottom {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+}
+.iPhone_bottom .btn {
+  height: auto;
+  border-color: #86868b;
+  border-width: 1px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.82353rem;
+  cursor: pointer;
+}
+.iPhone_bottom .btn .btn_left {
+  text-align: left;
+}
+.iPhone_bottom .btn .btn_left p {
+  color: #1d1d1f;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.iPhone_bottom .btn .btn_left span {
+  margin-top: 0.23529rem;
+}
+.iPhone_bottom .btn .btn_right {
+  margin-top: 0.23529rem;
+}
+.iPhone_bottom .btn .btn_right span {
+  color: #86868b;
+  font-size: 12px;
+  text-align: right;
+}
+.iPhone_bottom .photo_box {
+  min-height: 540px;
+  height: calc(100vh - 109px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  padding-right: 60px;
+  top: 109px;
+}
+.iPhone_bottom .photo_box .main_img {
+  max-height: 1200px;
+  border-radius: 18px;
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+.iPhone_bottom .description {
+  display: flex;
+  flex-direction: column;
+  max-width: 19.29412rem;
+}
+.iPhone_bottom .description .model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iPhone_bottom .description .model h2 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+}
+.iPhone_bottom .description .model h2 span {
+  color: #86868b;
+}
+.iPhone_bottom .description .model .btn1 {
+  display: flex;
+  border: 0;
+  flex-direction: column;
+  align-items: left;
+  padding: 15px;
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  margin-top: 0.82353rem;
+}
+.iPhone_bottom .description .model .btn1 p {
+  font-weight: 600;
+  margin-bottom: 2px;
+  padding-right: 22px;
+}
+.iPhone_bottom .description .model .btn1 span {
+  color: #1d1d1f;
+  text-align: left;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+}
+.iPhone_bottom .Finish {
+  margin: max(0px, 50vh - 54.5px - 172.5px) 0px max(60px, 50vh - 54.5px - 172.5px - 58px);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.iPhone_bottom .Finish h2 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+}
+.iPhone_bottom .Finish h2 span {
+  color: #86868b;
+}
+.iPhone_bottom .Finish p {
+  padding-top: 20px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 17px;
+}
+.iPhone_bottom .Finish a {
+  width: 100%;
+  padding-left: 100px;
+  color: #bf4800;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.iPhone_bottom .Finish .btn_colors {
+  display: flex;
+  padding-bottom: 11px;
+  flex-wrap: wrap;
+  margin: 0 -1px;
+}
+.iPhone_bottom .Finish .btn_colors button {
+  margin: 4px 5px 4px 0;
+  padding: 3px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+}
+.iPhone_bottom .Finish .btn_colors button img {
+  width: 32px;
+  height: 32px;
+}
+.iPhone_bottom .Finish .btn_colors .red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iPhone_bottom .Finish .btn_colors .red span {
+  font-size: 17px;
+  margin-left: 8px;
+  color: red;
+}
+.iPhone_bottom .Finish .mini_text {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #86868b;
+}
+.iPhone_bottom .Storage h2 span {
+  color: #86868b;
+}
+
+.trade_in {
+  margin: 174px auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.trade_in .trade_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% - 374px);
+  margin-top: 0.82353rem;
+}
+.trade_in .trade_box .trade_left {
+  padding-right: 46px;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.trade_in .trade_box .trade_left button {
+  border-color: #86868b;
+  font-size: 17px;
+  border-width: 2px;
+  padding: 14px;
+  line-height: 1.23536;
+  border-radius: 12px;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 4.88235rem;
+  width: 400px;
+}
+.trade_in .trade_box .trade_left button span {
+  letter-spacing: -0.01em;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+}
